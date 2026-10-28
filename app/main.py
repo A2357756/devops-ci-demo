@@ -21,4 +21,4 @@ def root():
 @app.get("/health")
 def health():
     # 給 K8S liveness/readiness、Docker healthcheck 用
-    return {"status": "ok"}
+    return {"status": "V2ok"}
