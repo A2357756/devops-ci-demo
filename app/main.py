@@ -15,10 +15,10 @@ app.include_router(login_router)
 @app.get("/")
 def root():
     # version 字串之後做 blue-green / canary、確認新版上線時會用到
-    return {"service": "hiii", "version": VERSION}
+    return {"service": "hiii 123", "version": VERSION}
 
 
 @app.get("/health")
 def health():
     # 給 K8S liveness/readiness、Docker healthcheck 用
-    return {"status": "V2ok"}
+    return {"status": "ok"}
